@@ -35,31 +35,3 @@ if __name__ == "__main__":
     # 7- Exibindo os perfis dos alunos
     aluno1.exibir_perfil()
     aluno2.exibir_perfil()
-
-class Curso:
-    def __init__(self, nome_curso, carga_horaria, turno, professor):
-        self.nome_curso = nome_curso
-        self.carga_horaria = carga_horaria
-        self.turno = turno
-        self.professor = professor
-
-    def exibir_detalhes(self):
-        print("\n" + "="*17)
-        print("DETALHES DO CURSO")
-        print("="*17)
-        print(f"Curso: {self.nome_curso}")
-        print(f"Carga Horária: {self.carga_horaria} horas")
-        print(f"Turno: {self.turno}")
-        print(f"Professor: {self.professor}")
-
-if __name__ == "__main__":
-    # Criando instâncias da classe Curso
-    curso1 = Curso("Análise e Desenvolvimento de Sistemas", 1200, "Noturno", "Prof. Carlos Silva")
-    curso2 = Curso("Desenvolvimento Web e Mobile", 800, "Matutino", "Prof. Ana Souza")
-
-    # Exibindo detalhes dos cursos
-    curso1.exibir_detalhes()
-    curso2.exibir_detalhes()
-
-    print("\n --- TESTANDO A ENTIDADE CURSO DO SISTEMA ---")
-    curso_web = Curso("Técnico em Desenvolvimento Web e Mobile II", 400, "Noturno", "Prof. Rodrigo Vilela")
