@@ -60,3 +60,6 @@ if __name__ == "__main__":
     # Exibindo detalhes dos cursos
     curso1.exibir_detalhes()
     curso2.exibir_detalhes()
+
+    print("\n --- TESTANDO A ENTIDADE CURSO DO SISTEMA ---")
+    curso_web = Curso("Técnico em Desenvolvimento Web e Mobile II", 400, "Noturno", "Prof. Rodrigo Vilela")
